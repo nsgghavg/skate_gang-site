@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skate Gang Academy</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+        header {
+            background-color: #ADD8E6; /* لون لبني */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        section.hero {
+            display: none;
+            padding: 100px;
+            text-align: center;
+            background-color: #fff;
+        }
+        section.hero h2 {
+            font-size: 3rem;
+            color: #333;
+        }
+        section.about {
+            display: none;
+            padding: 50px;
+            background-color: #fff;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-info {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Skate Gang Academy</h1>
+    </header>
+
+    <nav>
+        <a href="#home" onclick="showHome()">الرئيسية</a>
+        <a href="#about" onclick="showAbout()">عن الأكاديمية</a>
+    </nav>
+
+    <!-- الصفحة الرئيسية -->
+    <section id="home-section" class="hero">
+        <h2>مرحبًا بكم في Skate Gang</h2>
+    </section>
+
+    <!-- صفحة عن الأكاديمية -->
+    <section id="about-section" class="about">
+        <h2>عن الأكاديمية</h2>
+        <p>أكاديمية Skate Gang تقدم تدريباً شاملاً لكل الأعمار، مع التركيز على سلامة المتدربين. لدينا فريق من المدربين المحترفين الذين يتمتعون بالقدرة على تعليم المتدربين بشكل رائع ومفهوم. هدفنا هو تقديم أفضل تجربة تعلم في أجواء مليئة بالحيوية والتفاعل.</p>
+        <div class="contact-info">
+            <h3>تواصل معنا</h3>
+            <p>هاتف: 0123456789</p>
+            <p>إنستقرام: <a href="https://instagram.com/skategang" target="_blank">@skategang</a></p>
+            <p>فيسبوك: <a href="https://facebook.com/skategang" target="_blank">Skate Gang</a></p>
+            <p>تيك توك: <a href="https://tiktok.com/@skategang" target="_blank">@skategang</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>أكاديمية Skate Gang - عزبة البرج، دمياط</p>
+        <p>تابعنا على وسائل التواصل الاجتماعي</p>
+    </footer>
+
+    <script>
+        // عرض الصفحة الرئيسية عند تحميل الصفحة
+        document.getElementById('home-section').style.display = 'block';
+
+        // دالة لعرض الصفحة الرئيسية
+        function showHome() {
+            document.getElementById('home-section').style.display = 'block';
+            document.getElementById('about-section').style.display = 'none';
+        }
+
+        // دالة لعرض صفحة عن الأكاديمية
+        function showAbout() {
+            document.getElementById('home-section').style.display = 'none';
+            document.getElementById('about-section').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
